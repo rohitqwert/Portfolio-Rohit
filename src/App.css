@@ -1,0 +1,437 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  z-index: 10;
+}
+
+.header-bg {
+  background-color: rgba(0, 0, 0, 0.85)
+  
+}
+
+
+
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-menu li {
+  padding: 0 1rem;
+}
+
+.nav-menu li a {
+  font-size : 1.9rem;
+  font-weight: 500;
+}
+
+.hamburger{
+  display: none;
+}
+
+@media screen and (max-width:1920px) {
+  .nav-menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: -3;
+    transition: 0.3s;
+  }
+}
+.nav-menu.active{
+  left: 0;
+}
+
+
+.nav-menu li {
+  padding:1rem ;
+}
+
+.nav-menu li a {
+  font-size: 2rem;
+}
+
+.hamburger {
+  display: initial;
+}
+
+.mask{
+  width:100%;
+  height:100%;
+  position:relative;
+}
+.into-img{
+  width:100%;
+  height:100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.mask::after{
+  content:"";
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  background-color:#000;
+  opacity:0.5;
+}
+
+.hero{
+  height: 100%;
+  width: 100%;
+}
+
+.hero .content{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top:50%;
+  left:50%;
+  text-align: center;
+
+}
+
+.hero .content h1{
+  font-size: 3rem;
+  padding: 0.6rem 0 1.5rem;
+
+}
+
+.hero.content p{
+  font-size: 1.4rem;
+  font-weight: 200;
+  text-transform: uppercase;
+
+}
+
+h2{
+  font-size:1.9rem;
+  color: rgba(251, 0, 255, 0.605);
+}
+
+.content .btn {
+  margin:1rem 0.2rem;
+}
+
+@media screen and (max-width:840px) {
+  .hero .content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero.content p{
+    font-size: 1.4rem;
+  }
+}
+
+.footer{
+  width:100%;
+  padding: 5rem 0 ;
+  background-color: rgba(19, 19, 19, 0.8);
+}
+
+.footer-container{
+  max-width:  1280px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap :40px;
+}
+
+.left{
+  height:100%;
+  max-width:100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+}
+.location{
+  display: flex;
+  margin-bottom: 0.8rem;
+}
+.location p{
+  line-height:30px;
+}
+.right {
+  height:100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction:column;
+  padding: 1rem;
+}
+
+
+
+.Social {
+  margin-top:1rem;
+}
+
+h4{
+  font-size:1.5rem;
+  padding-bottom: 0.7rem;
+}
+p{
+  font-size:1.2rem;
+}
+
+@media screen and (max-width:840px){
+  .footer-container{
+  grid-template-columns:1fr;
+  }
+  
+}
+
+.hero-img{
+  width:100%;
+  background: rgba(115, 30, 185, 0.5);
+  height: 85vh;
+  position: relative;
+}
+
+.hero-img::before {
+  content: "";
+  background: url("https://images.unsplash.com/photo-1661956600684-97d3a4320e45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-size: cover;
+  background-position: center top;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+
+}
+
+.heading{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-img h1 {
+  font-size: 2.5rem;
+}
+.hero-img p{
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+@media screen and (max-width:840px) {
+  .hero-img h1 {
+    font-size: 2rem;
+  }
+}
+.sk-logo{
+  position:absolute;
+  height: 10%;
+  margin-left: 0px;
+  margin-top: 395px;  
+  top: 29px;
+}
+.sk-logo2{
+  position: absolute;
+  height: 10%;
+  top:40%;
+  margin-left: 140px;
+  margin-top: 140px;
+}
+.sk-logo3{
+  position: absolute;
+  height:10%;
+  top:39.5%;
+  margin-left:250px;
+  margin-top:150px;
+}
+.sk-logo4{
+  position: absolute;
+  height: 10%;
+  top:39.5%;
+  margin-left: 350px;
+  margin-top:150px;
+}
+.sk-logo5{
+  position: absolute;
+  height: 10%;
+  top:40%;
+  margin-left: 450px;
+  border-radius: 25px;
+  margin-top:150px;
+}
+.sk-logo6{
+  position: absolute;
+  height: 10%;
+  top:40%;
+  margin-left: 570px;
+  border-radius: 10px;
+  margin-top:150px;
+}
+.sk-logo7{
+  position: absolute;
+  height: 10%;
+  top:40%;
+  margin-left: 650px;
+  border-radius: 20px;
+  margin-top:150px;
+}
+.sk-logo8{
+  position: absolute;
+  height: 10%;
+  top:40%;
+  margin-left: 770px;
+  border-radius: 25px;
+  margin-top:150px;
+}
+.sk-logo9{
+  position: absolute;
+  height: 10%;
+  top:40%;
+  margin-left: 950px;
+  margin-top:150px;
+}
+.sk-logo10{
+  position: absolute;
+  height: 10%;
+  top:40%;
+  margin-left: 1030px;
+  margin-top:150px;
+}
+.sk-logo11{
+  position: absolute;
+  height: 10%;
+  top:40%;
+  margin-left: 1220px;
+  border-radius: 25px;
+  margin-top:150px;
+}
+.sk-logo12{
+  position: absolute;
+  height: 10%;
+  top:40%;
+  margin-left: 1350px;
+  border-radius: 25px;
+  margin-top:150px;
+}
+@media screen and (max-width:840px) {
+  .sk-logo{
+    position:absolute;
+    height: 7%;
+    margin-left: 0px;
+    margin-top: 450px;  
+    top: 20px;
+  }
+  .sk-logo2{
+    position: absolute;
+    height: 7%;
+    top:47.2%;
+    margin-left:60px;
+    margin-top: 140px;
+  }
+  .sk-logo3{
+    position: absolute;
+    height:7%;
+    top:46.2%;
+    margin-left:110px;
+    margin-top:150px;
+  }
+  .sk-logo4{
+    position: absolute;
+    height:6.5%;
+    top:46.4%;
+    margin-left: 160px;
+    margin-top:150px;
+  }
+  .sk-logo5{
+    position: absolute;
+    height: 6%;
+    top:47%;
+    margin-left: 220px;
+    margin-top:150px;
+  }
+  .sk-logo6{
+    position: absolute;
+    height: 7.5%;
+    top:46.4%;
+    margin-left:289px;
+    border-radius: 10px;
+    margin-top:150px;
+  }
+  .sk-logo7{
+    position: absolute;
+    height: 6%;
+    top:47%;
+    margin-left:345px;
+    border-radius: 20px;
+    margin-top:150px;
+  }
+  .sk-logo8{
+    position: absolute;
+    height: 5%;
+    top:47.5%;
+    margin-left: 410px;
+    border-radius: 25px;
+    margin-top:150px;
+  }
+  .sk-logo9{
+    position: absolute;
+    height: 7%;
+    top:46.5%;
+    margin-left: 500px;
+    margin-top:150px;
+  }
+  .sk-logo10{
+    position: absolute;
+    height: 5%;
+    top:46.9%;
+    margin-left: 538px;
+    margin-top:150px;
+  }
+  .sk-logo11{
+    position: absolute;
+    height: 5%;
+    top:46.5%;
+    margin-left: 625px;
+    border-radius: 25px;
+    margin-top:150px;
+  }
+  .sk-logo12{
+    position: absolute;
+    height: 4%;
+    top:47%;
+    margin-left: 700px;
+    border-radius: 25px;
+    margin-top:150px;
+  }
+
+
+
+
+
+
+
+
+
+
+}
+
+.into-im{
+  padding: 10px;
+  border-radius: 30px;
+
+  
+}
