@@ -40,7 +40,7 @@ To get a copy of this project up and running on your local machine, follow these
 2. Navigate to the project directory:
 
    ```bash
-   cd portfolio-v2
+   cd portfolio
    ```
 
 3. Install the project dependencies:
