@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-![GitHub last commit]() ![GitHub]() ![Vercel]()
+![GitHub last commit](https://github.com/rohitqwert/Portfolio-Rohit.git) ![GitHub](https://github.com/rohitqwert/Portfolio-Rohit.git) ![Vercel]()
 
 Welcome to my personal portfolio website built with Next.js, BootStrap, and other technologies. You can view the live website here: []()
 
