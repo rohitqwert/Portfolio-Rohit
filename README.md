@@ -19,7 +19,7 @@ This project is my personal portfolio website, where I showcase my skills, proje
 
 ## Technologies Used
 
-- [Next.js](https://nextjs.org/): A React framework for building server-rendered React applications.
+- [React.js](https://react.dev/learn): A  framework for building server-rendered React applications.
 
 - [BootStrap](https://getbootstrap.com/): A utility-first CSS framework for rapidly building custom designs.
 
